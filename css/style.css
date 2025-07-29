@@ -1,0 +1,106 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav.navbar {
+  background-color: #00695c;
+}
+nav.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav.navbar ul li {
+  margin: 0 15px;
+}
+nav.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+nav.navbar ul li a:hover {
+  background-color: #004d40;
+  border-radius: 4px;
+}
+section {
+  padding: 20px;
+}
+h2 {
+  margin-top: 40px;
+  color: #004d40;
+  text-align: center;
+}
+.anggota-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.anggota {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.anggota:hover {
+  transform: scale(1.05);
+}
+.anggota img {
+  width: 100%;
+  border-radius: 50%;
+}
+.modal {
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+.modal-content a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #e1306c;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.modal-content a i {
+  margin-right: 5px;
+}
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
